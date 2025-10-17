@@ -15,3 +15,6 @@
 - [x] Install and setup express `npm i express`
 - [x] Add cors
 - [x] Add furniture controller
+
+## Authentication and Authorization
+- [x] Create user controller
