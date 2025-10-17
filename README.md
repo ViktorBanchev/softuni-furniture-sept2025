@@ -5,3 +5,7 @@
 - [x] Initial folder structure
 - [x] Add client resources and install dependencies
 - [x] Add .gitignore to client folder
+
+## Startup client
+- [x] install vite (local development server) `npm i -D vite`
+- [x] Setup vite
