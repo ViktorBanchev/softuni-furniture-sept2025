@@ -18,3 +18,4 @@
 
 ## Authentication and Authorization
 - [x] Create user controller
+- [ ] Register user

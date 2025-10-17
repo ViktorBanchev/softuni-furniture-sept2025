@@ -5,7 +5,10 @@ import routes from './routes.js';
 
 const app = express()
 
-app.use(cors())
+app.use(cors());
+
+//add json parser
+app.use(express.json())
 
 app.use(routes)
 
