@@ -22,6 +22,14 @@
 - [x] Add register endpoint
 - [x] Install mongoose
 - [x] Add user model
-- [ ] Add user service
-- [ ] Add bcrypt
-- [ ] hash password on register
+- [x] Add user service
+- [x] Add bcrypt
+- [x] hash password on register
+- [x] Add login endpoint
+- [x] Verify login credentials
+- [x] Return token
+
+
+
+
+- use .env variables `npm i dotenv`
