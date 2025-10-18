@@ -21,7 +21,7 @@
 - [x] Add json parser
 - [x] Add register endpoint
 - [x] Install mongoose
-- [ ] Add user model
+- [x] Add user model
 - [ ] Add user service
 - [ ] Add bcrypt
 - [ ] hash password on register
