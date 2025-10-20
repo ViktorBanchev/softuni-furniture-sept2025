@@ -35,7 +35,8 @@
 - [x] Add furniture model
 - [x] Add furniture service
 - [x] Create furniture endpoint
-- [ ] Get all furnitures
+- [x] Get all furnitures
+- [x] Select only needed information
 
 
 ## Error handling

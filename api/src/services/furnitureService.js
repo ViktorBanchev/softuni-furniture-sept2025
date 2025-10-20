@@ -6,6 +6,10 @@ export default {
     },
 
     getAll() {
-        return Furniture.find();
+        return Furniture.find().select({
+            description: true,
+            price: true,
+            img: true
+        })
     }
 }
