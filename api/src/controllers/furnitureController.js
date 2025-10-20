@@ -10,15 +10,28 @@ furnitureController.get("/", async (req, res) => {
 
 furnitureController.post("/", async (req, res) => {
     const furnitureData = req.body;
+    const ownerId = req.user?.id;
 
-    const furniture = await furnitureService.create(furnitureData)
+    const furniture = await furnitureService.create(furnitureData, ownerId)
     res.status(201).json(furniture);
 })
 
 furnitureController.get("/:furnitureId", async (req, res) => {
-    const id = req.params.furnitureId;
-    const furniture = await furnitureService.getOne(id);
+    const furnitureId = req.params.furnitureId;
+    const furniture = await furnitureService.getOne(furnitureId);
     res.json(furniture);
+})
+
+furnitureController.put("/:furnitureId", async (req, res) => {
+    const furnitureId = req.params.furnitureId;
+    const furnitureData = req.body;
+
+    try {
+        const furniture = await furnitureService.update(furnitureId, furnitureData)
+        res.json(furniture);
+    } catch (error) {
+        //Error handling
+    }
 })
 
 export default furnitureController;

@@ -37,7 +37,8 @@
 - [x] Create furniture endpoint
 - [x] Get all furnitures
 - [x] Select only needed information
-- [ ] Create details endpoint
+- [x] Create details endpoint
+- [x] Add owner relation to furniture model
 
 
 ## Error handling

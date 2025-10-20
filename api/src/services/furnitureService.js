@@ -1,8 +1,11 @@
 import Furniture from "../models/Furniture.js"
 
 export default {
-    create(furnitureData) {
-        return Furniture.create(furnitureData)
+    create(furnitureData, ownerId) {
+        return Furniture.create({
+            ...furnitureData,
+            _ownerId: ownerId,
+        })
     },
 
     getAll() {
@@ -15,5 +18,9 @@ export default {
 
     getOne(id) {
         return Furniture.findById(id)
+    },
+
+    update(furnitureId, furnitureData) {
+        return Furniture.findByIdAndUpdate(furnitureId, furnitureData, {runValidators: true});
     }
 }
