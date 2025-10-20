@@ -11,5 +11,9 @@ export default {
             price: true,
             img: true
         })
+    },
+
+    getOne(id) {
+        return Furniture.findById(id)
     }
 }

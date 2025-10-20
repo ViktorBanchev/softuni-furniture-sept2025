@@ -37,6 +37,7 @@
 - [x] Create furniture endpoint
 - [x] Get all furnitures
 - [x] Select only needed information
+- [ ] Create details endpoint
 
 
 ## Error handling
