@@ -21,4 +21,10 @@ userController.post("/login", async (req, res) => {
     }
 })
 
+userController.get("/logout", (req, res) => {
+  //Invalidate token
+
+  res.status(200).json({ok: true})
+})
+
 export default userController;
