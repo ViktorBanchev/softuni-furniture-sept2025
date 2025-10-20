@@ -28,8 +28,12 @@
 - [x] Add login endpoint
 - [x] Verify login credentials
 - [x] Return token
+- [x] Add logout
+- [x] add auth middleware
 
-
-
+## Furniture endpoints
+- [x] Add furniture model
+- [ ] Add furniture service
+- [ ] Create furniture endpoint
 
 - use .env variables `npm i dotenv`
