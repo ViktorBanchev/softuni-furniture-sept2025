@@ -12,7 +12,7 @@ export function authMiddleware(req, res, next) {
 
         req.user = decodedToken;
 
-        return next();
+        next();
     } catch (error) {
         res.status(401).json({message: "Invalid user token"})
     }
