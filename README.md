@@ -39,6 +39,7 @@
 - [x] Select only needed information
 - [x] Create details endpoint
 - [x] Add owner relation to furniture model
+- [x] Filter furniture by userId
 
 
 ## Error handling

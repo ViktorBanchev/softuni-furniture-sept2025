@@ -1,18 +1,18 @@
 import Furniture from "../models/Furniture.js"
 
 export default {
+    getAll(filter) {
+        return Furniture.find(filter).select({
+            description: true,
+            price: true,
+            img: true
+        })
+    },
+
     create(furnitureData, ownerId) {
         return Furniture.create({
             ...furnitureData,
             _ownerId: ownerId,
-        })
-    },
-
-    getAll() {
-        return Furniture.find().select({
-            description: true,
-            price: true,
-            img: true
         })
     },
 
